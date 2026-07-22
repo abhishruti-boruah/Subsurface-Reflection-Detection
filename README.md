@@ -1,36 +1,18 @@
-# Subsurface-Reflection-Detection
-Deep Learning Framework for Detection of Potential Subsurface Reflections in SHARAD Radar Data.
+# SHARAD Subsurface Reflection Detection
 
-### SHARAD Dataset
+This repository contains the preprocessing and machine learning pipeline developed for detecting potential subsurface reflections in SHARAD radar observations of Mars.
 
-This project uses SHARAD radar observations collected from NASA's Planetary Data System (PDS).
+Current Progress
 
-Current Dataset
+✔ Google Drive dataset connected
+✔ Oxia Planum dataset verified
+✔ 262 observations loaded successfully
+✔ Image dimensions analyzed
 
-Region:
-- Oxia Planum
+Next Steps
 
-Storage
-
-The complete dataset is stored in Google Drive because GitHub is not intended for large scientific datasets.
-
-Google Drive Structure
-
-SHARAD_Project/
-└── Data/
-    └── Oxia_Planum/
-        └── Observations/
-            ├── Observation_00401901/
-            ├── Observation_00787601/
-            ├── ...
-            └── Observation_05127201/
-
-Current Dataset Statistics
-
-- Region: Oxia Planum
-- Number of observations: 262
-- Each observation contains:
-  - Radargram (.png)
-  - Clutter Simulation (.png)
-
-The notebooks access the dataset directly from Google Drive using Google Colab.
+- Automatic preprocessing
+- Radargram and cluttergram alignment
+- Noise filtering
+- Dataset generation
+- U-Net model training
